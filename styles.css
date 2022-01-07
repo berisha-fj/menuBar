@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shizuru&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    background-color: #55423d;
+}
+
+.trigger {
+    background-color: #ffc0ad;
+    font-size: 25px;
+    outline: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(39, 28, 25);
+    cursor: pointer;
+}
+
+.trigger:hover {
+   box-shadow: 0 10px 10px rgb(39, 28, 25);
+} 
+
+ul {
+    z-index: 999;
+    position: relative;
+}
+
+ul li a{
+    color: #fff3ec;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 3px;
+    transition: 0.15s ease-in-out;
+    font-size: 50px;
+}
+
+
+ul li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 25px;
+    animation: 0.70s ease-in-out animateList forwards;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+ul li a:hover, 
+ul li a i {
+    color: #ffc0ad;
+}
+
+@keyframes animateList {
+    from {
+        margin-top: 15px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0; 
+        opacity: 5;
+    }
+}
+
+.full-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+.open-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop {
+    position: absolute;
+    background-color: #271c19;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+#home {
+    color: #9656a1;
+}
+
+#us {
+    color: #9656a1;
+}
+
+#projects {
+    color: #9656a1;
+}
+
+#work {
+    color: #9656a1;
+}
+
+#contact {
+    color: #9656a1;
+}
+
+#btn {
+    color: #fffffe; 
+}
